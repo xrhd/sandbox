@@ -1,0 +1,8 @@
+train:
+  type: MemoryDataSet
+train_ds:
+  type: MemoryDataSet
+valid:
+  type: MemoryDataSet
+valid_ds:
+  type: MemoryDataSet

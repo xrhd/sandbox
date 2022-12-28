@@ -1,0 +1,11 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+# plotnine.ggplot.ggplot
+# output_plot:
+#   type: matplotlib.MatplotlibWriter
+#   filepath: data/08_reporting/output_plot.png
+#   save_args:
+#     format: png
