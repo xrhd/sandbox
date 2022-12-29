@@ -1,5 +1,7 @@
 # HKLSTM 
 
+![](docs/images/output_plot.png)
+
 based on [colab](https://colab.research.google.com/github/deepmind/dm-haiku/blob/main/examples/haiku_lstms.ipynb#scrollTo=f2qETEqXLT1N)
 
 ## Overview
