@@ -1,0 +1,66 @@
+[MFLOG|0|2024-10-19T21:47:34.430971Z|runtime|4a824400-3be3-40f8-8a23-40bc8e70d7f1]    Internal error
+[MFLOG|0|2024-10-19T21:47:34.432388Z|runtime|eecf232a-d683-46bb-a05b-f22c0cd6d3bf]Traceback (most recent call last):
+[MFLOG|0|2024-10-19T21:47:34.432442Z|runtime|54f8c67e-c035-46ec-b938-a43925ad47bf]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/cli.py", line 1139, in main
+[MFLOG|0|2024-10-19T21:47:34.432480Z|runtime|17458a09-7dd9-41a7-b674-38995208f2a9]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-10-19T21:47:34.432521Z|runtime|56b9a527-8d00-4a36-9962-63435f368aa1]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-10-19T21:47:34.432562Z|runtime|b63bb53b-f535-4b74-9f80-11a0a72a2a28]    return func(args, kwargs)
+[MFLOG|0|2024-10-19T21:47:34.954895Z|runtime|b06106f5-388e-462a-a359-910ab5e488f2]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955112Z|runtime|a6257b74-a600-4ae0-9541-6a91cbfd052b]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-10-19T21:47:34.955142Z|runtime|2b04875e-4f14-4e81-8d86-ac6897608724]    return self.main(args, kwargs)
+[MFLOG|0|2024-10-19T21:47:34.955165Z|runtime|a55b5639-37cd-4474-9bf4-3a5deefb07cf]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955192Z|runtime|69d91dca-e7f8-4d98-9b30-ac90720dbce7]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-10-19T21:47:34.955214Z|runtime|56ded27f-741a-4519-9ced-a3c67e9400a5]    rv = self.invoke(ctx)
+[MFLOG|0|2024-10-19T21:47:34.955243Z|runtime|f2ed908b-1c0c-4ba8-b5ec-32cb895a4e69]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955264Z|runtime|3f44abd7-2736-4f5f-9ed7-5f85a931c435]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-10-19T21:47:34.955286Z|runtime|2a76a245-c779-4539-aba9-0c4b2c601227]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-10-19T21:47:34.955306Z|runtime|720664e1-66d4-4720-abce-e756c896b5ae]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955328Z|runtime|bc330d70-69aa-45d3-884d-2b8bfa0598f3]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-10-19T21:47:34.955347Z|runtime|609f513e-23d7-4fc4-81a4-d491ab217204]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-10-19T21:47:34.955366Z|runtime|af43d365-59b3-4fa5-982b-9dc93b919ae4]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955388Z|runtime|64bd96c4-b53a-4d29-92bd-9a5403b99fa6]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-10-19T21:47:34.955409Z|runtime|f2a4ecbc-51d1-4cc2-b950-9a443747f7ed]    return callback(args, kwargs)
+[MFLOG|0|2024-10-19T21:47:34.955428Z|runtime|ddc46159-94ae-45d9-b00e-0571e3ed55d7]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955446Z|runtime|532a9ab2-1366-46e2-861a-9d45fc6a4419]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-10-19T21:47:34.955466Z|runtime|699fc271-388e-4cfd-a89f-35782717c02a]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-10-19T21:47:34.955485Z|runtime|b6bfc603-6754-4cf1-83a2-d1ea9a8ff8f4]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955503Z|runtime|aef1a771-0777-4fd8-a37a-6c85a2e1a4be]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-10-19T21:47:34.955525Z|runtime|694cbe6a-426b-4c1c-917e-ed40943636ae]    task.run_step(
+[MFLOG|0|2024-10-19T21:47:34.955545Z|runtime|e96b878a-5b97-4a16-b461-7925c9e0adae]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/task.py", line 729, in run_step
+[MFLOG|0|2024-10-19T21:47:34.955564Z|runtime|10eda951-3a19-4380-a253-7c79fdb27063]    output.persist(self.flow)
+[MFLOG|0|2024-10-19T21:47:34.955592Z|runtime|d24f4389-0a75-4763-b1bd-6d261a438a17]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/task_datastore.py", line 31, in method
+[MFLOG|0|2024-10-19T21:47:34.955619Z|runtime|e634128b-fa3d-465b-ada1-f97d847204c2]    return f(self, args, kwargs)
+[MFLOG|0|2024-10-19T21:47:34.955640Z|runtime|283c9b31-4a5c-4e2a-a700-84ccb5b59300]           ^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955662Z|runtime|0015af86-1e69-42a6-baab-68514bcc46c0]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/task_datastore.py", line 45, in method
+[MFLOG|0|2024-10-19T21:47:34.955684Z|runtime|fc0ab46c-ecf9-44e1-9d0e-1a27309f96fb]    return f(self, args, kwargs)
+[MFLOG|0|2024-10-19T21:47:34.955703Z|runtime|277d65d6-35ac-48ca-9789-a21777e9b533]           ^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955724Z|runtime|c68dcd19-8334-4901-bfca-c9e6ab408a61]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/task_datastore.py", line 744, in persist
+[MFLOG|0|2024-10-19T21:47:34.955744Z|runtime|cc66d1b5-1775-4a59-afd6-2290c5b4c90f]    self.save_artifacts(artifacts_iter(), len_hint=len(valid_artifacts))
+[MFLOG|0|2024-10-19T21:47:34.955762Z|runtime|71198972-6962-4a63-8ddc-6118af4144ed]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/task_datastore.py", line 31, in method
+[MFLOG|0|2024-10-19T21:47:34.955781Z|runtime|111b9a23-bf73-42af-be89-03292607a12d]    return f(self, args, kwargs)
+[MFLOG|0|2024-10-19T21:47:34.955800Z|runtime|52b6051d-a513-487b-a1c4-633771dbb4aa]           ^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955818Z|runtime|96e10086-faa8-404f-b377-dfcb40e5c9d5]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/task_datastore.py", line 45, in method
+[MFLOG|0|2024-10-19T21:47:34.955837Z|runtime|711dcac3-b912-445c-9eb9-220b63099c1a]    return f(self, args, kwargs)
+[MFLOG|0|2024-10-19T21:47:34.955855Z|runtime|b8b0dbe2-bb31-40b8-984f-7b228ab8f3f6]           ^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955874Z|runtime|50fb0a6d-5ac4-4368-9dd5-cf83c096c95e]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/task_datastore.py", line 329, in save_artifacts
+[MFLOG|0|2024-10-19T21:47:34.955894Z|runtime|a061b4e9-0c6a-47a8-aa3f-37455ce91865]    save_result = self._ca_store.save_blobs(pickle_iter(), len_hint=len_hint)
+[MFLOG|0|2024-10-19T21:47:34.955912Z|runtime|fc17813d-9f78-461f-aecf-7ba914c33fb9]                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.955930Z|runtime|d1d82d0b-d42e-441e-959a-69469b648668]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/content_addressed_store.py", line 100, in save_blobs
+[MFLOG|0|2024-10-19T21:47:34.955948Z|runtime|17f93fe2-18b0-4709-9a20-056db5e85237]    self._storage_impl.save_bytes(packing_iter(), overwrite=True, len_hint=len_hint)
+[MFLOG|0|2024-10-19T21:47:34.955967Z|runtime|fb3f0edb-c83a-4a6a-8ce5-129c144d8edb]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/plugins/datastores/local_storage.py", line 107, in save_bytes
+[MFLOG|0|2024-10-19T21:47:34.955986Z|runtime|30adddce-04db-466e-837c-c80cc223dc1f]    for path, obj in path_and_bytes_iter:
+[MFLOG|0|2024-10-19T21:47:34.956004Z|runtime|7a4d3e2f-ffca-4a0e-95e2-8debdaf51594]                     ^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.956025Z|runtime|8223e591-e139-4a1e-a149-68d9fb9fee14]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/content_addressed_store.py", line 78, in packing_iter
+[MFLOG|0|2024-10-19T21:47:34.956045Z|runtime|ff5a1f15-34ed-474f-8232-44c44d59ce70]    for blob in blob_iter:
+[MFLOG|0|2024-10-19T21:47:34.956063Z|runtime|2f91c95d-d526-4873-bc16-2945233984e9]                ^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.956084Z|runtime|d8441d94-9e2d-4446-8c20-de2446a5c400]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/datastore/task_datastore.py", line 302, in pickle_iter
+[MFLOG|0|2024-10-19T21:47:34.956104Z|runtime|a493c467-2bdd-4ee7-8c17-e9aa9e6a4c84]    blob = pickle.dumps(obj, protocol=2)
+[MFLOG|0|2024-10-19T21:47:34.956123Z|runtime|8dd11faa-478d-478b-8259-27ae6cb37c99]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.956143Z|runtime|a15699b9-d00c-412b-ab9f-a350ac9e9940]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/framework/ops.py", line 327, in __reduce__
+[MFLOG|0|2024-10-19T21:47:34.956162Z|runtime|91622a4d-3e31-4bf0-9041-4bb38c8a0f55]    return convert_to_tensor, (self._numpy(),)
+[MFLOG|0|2024-10-19T21:47:34.956180Z|runtime|71f9aebe-a467-4503-9647-de1907641494]                               ^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.956198Z|runtime|c3bdbe17-d28f-4e0f-a5bb-3827030ae6ba]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/framework/ops.py", line 375, in _numpy
+[MFLOG|0|2024-10-19T21:47:34.956216Z|runtime|88340387-6d24-4a4c-a779-f54df9905103]    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+[MFLOG|0|2024-10-19T21:47:34.956234Z|runtime|aa8666c1-b109-48e7-9a57-d5ad88afe8a3]    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:47:34.956252Z|runtime|823db4e7-f0bb-4083-a185-bea5e1d4d46a]tensorflow.python.framework.errors_impl.InvalidArgumentError: Cannot convert a Tensor of dtype variant to a NumPy array.
+[MFLOG|0|2024-10-19T21:47:34.956272Z|runtime|9fd7d0ee-a092-400f-850b-ab8a35dade44]
+[MFLOG|0|2024-10-19T21:47:34.956925Z|runtime|5fd1f639-ce4a-486a-adfd-6c02c1b04b55]Task failed.

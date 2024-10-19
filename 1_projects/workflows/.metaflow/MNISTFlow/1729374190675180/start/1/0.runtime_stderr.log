@@ -1,0 +1,91 @@
+[MFLOG|0|2024-10-19T21:43:13.239625Z|runtime|34e2d6f7-b4b1-47c8-bbc6-60d38fe664f5]<flow MNISTFlow step start> failed:
+[MFLOG|0|2024-10-19T21:43:13.242797Z|runtime|24a8c5a5-32c7-4091-a454-bc542666e12f]    Internal error
+[MFLOG|0|2024-10-19T21:43:13.244182Z|runtime|3cf5ff9b-d57e-4964-952e-7f5341fef328]Traceback (most recent call last):
+[MFLOG|0|2024-10-19T21:43:13.244227Z|runtime|7d84394f-ef12-4515-91f6-94b4649ce5e9]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/cli.py", line 1139, in main
+[MFLOG|0|2024-10-19T21:43:13.244266Z|runtime|43dfb478-4c03-453e-bb2c-d6da182ad36d]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-10-19T21:43:13.244296Z|runtime|fd8cfdc5-eec2-4a9c-86d6-59b03e0b4df4]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-10-19T21:43:13.244334Z|runtime|8b1a4ba6-de23-4c18-bd07-f29c420913e3]    return func(args, kwargs)
+[MFLOG|0|2024-10-19T21:43:13.775743Z|runtime|4519d354-4332-4e1d-96a9-9a8178a6080e]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.775954Z|runtime|4d36efb9-3353-4e6d-a7c3-394237c01ff0]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-10-19T21:43:13.775991Z|runtime|1b4f9e75-ee08-4587-acb4-11eb88fb761c]    return self.main(args, kwargs)
+[MFLOG|0|2024-10-19T21:43:13.776024Z|runtime|cff3572c-020f-4d00-9501-84fcfd9866ac]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776045Z|runtime|d7e60480-062b-4a85-bc59-555fa9f12f6d]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-10-19T21:43:13.776069Z|runtime|c9ab63ce-ec09-4070-baae-63c9940d69d8]    rv = self.invoke(ctx)
+[MFLOG|0|2024-10-19T21:43:13.776090Z|runtime|302a54e1-9493-4cf8-bcc3-f23a43fb2a1b]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776110Z|runtime|efb1b025-30f3-4145-aa2e-48a2c2c0073b]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-10-19T21:43:13.776131Z|runtime|17ad5217-8bbf-43c0-98a1-6f904c17f541]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-10-19T21:43:13.776151Z|runtime|5a401298-2bfd-4250-84f0-21e69bb6ac6b]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776171Z|runtime|4b878256-59ae-4c60-bbfa-f38147f185e5]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-10-19T21:43:13.776191Z|runtime|5f4ae545-ef0d-484b-a417-a3f24d3ee79f]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-10-19T21:43:13.776211Z|runtime|4f3da42d-b072-4a1c-8d02-617e04951276]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776229Z|runtime|b34bf089-b7ef-4792-9815-b23250d0ce3a]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-10-19T21:43:13.776248Z|runtime|17699529-f62e-4f1a-b783-1cbb84b869c7]    return callback(args, kwargs)
+[MFLOG|0|2024-10-19T21:43:13.776266Z|runtime|ccfe17dc-38d5-4008-b7a7-84b0d1a3c53a]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776285Z|runtime|9d0cbdab-844f-4a6a-a5a1-7138c548b511]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-10-19T21:43:13.776304Z|runtime|159fb183-018f-44dc-aea2-c428e9d76ced]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-10-19T21:43:13.776325Z|runtime|59bb5565-d3b2-4632-af60-d37bd43b3fbb]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776344Z|runtime|1ee2bd3d-4094-4b75-ba37-3441024c4d97]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-10-19T21:43:13.776362Z|runtime|3035cdb5-4d81-4609-a15a-4310deebc426]    task.run_step(
+[MFLOG|0|2024-10-19T21:43:13.776382Z|runtime|6ecd5a8b-4496-400f-8c9a-fee98e5a4946]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/task.py", line 657, in run_step
+[MFLOG|0|2024-10-19T21:43:13.776401Z|runtime|2f5e294d-d6d0-4079-a703-f163ebd17c50]    self._exec_step_function(step_func)
+[MFLOG|0|2024-10-19T21:43:13.776420Z|runtime|f3d9085c-36d9-438d-8a46-c5d54ead2035]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-10-19T21:43:13.776443Z|runtime|38346e69-aa5f-4c2c-aa5d-87ed8eb13748]    step_function()
+[MFLOG|0|2024-10-19T21:43:13.776464Z|runtime|107d85fb-090b-413e-9217-077735cef713]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/hello.py", line 45, in start
+[MFLOG|0|2024-10-19T21:43:13.776485Z|runtime|58745184-fe8c-46d0-ac4b-0c57be89e092]    ds = ds.map(preprocess)
+[MFLOG|0|2024-10-19T21:43:13.776504Z|runtime|46ca99d8-5b2a-4fa5-8ab4-90e167075bd9]         ^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776527Z|runtime|2e292503-3450-4fd1-8530-2961a0d05ed0]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 2311, in map
+[MFLOG|0|2024-10-19T21:43:13.776547Z|runtime|063f2567-3fbe-406d-a766-e1b76a908be0]    return map_op._map_v2(
+[MFLOG|0|2024-10-19T21:43:13.776567Z|runtime|7bb56d4e-8492-4edf-9e82-e38cd2341e6c]           ^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776585Z|runtime|ed7ebb5c-309f-4724-9405-7b5c4e40149a]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/data/ops/map_op.py", line 37, in _map_v2
+[MFLOG|0|2024-10-19T21:43:13.776604Z|runtime|0524877a-7a36-4fad-ac08-dfeb8f98bf06]    return _MapDataset(
+[MFLOG|0|2024-10-19T21:43:13.776623Z|runtime|69f2573f-a48b-4b81-8e6d-5ff783ab8cd0]           ^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776644Z|runtime|fe5a38f8-b848-4543-a87d-bef47293bff6]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/data/ops/map_op.py", line 107, in __init__
+[MFLOG|0|2024-10-19T21:43:13.776665Z|runtime|9dab3c72-24ef-4811-8654-5a3f015c599d]    self._map_func = structured_function.StructuredFunctionWrapper(
+[MFLOG|0|2024-10-19T21:43:13.776683Z|runtime|ffeb7595-a2b9-4d84-aeb3-854cf5565a70]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776702Z|runtime|c9360edf-6049-4730-8f6d-a1512505c2ca]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/data/ops/structured_function.py", line 265, in __init__
+[MFLOG|0|2024-10-19T21:43:13.776721Z|runtime|5d0cda5f-dd41-4e49-82a7-d335e73dde88]    self._function = fn_factory()
+[MFLOG|0|2024-10-19T21:43:13.776740Z|runtime|0bdb5486-895f-477a-af81-838aba5b40c6]                     ^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776760Z|runtime|f82b83b2-ef7f-447a-8361-fef3c5ffbc4e]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 1251, in get_concrete_function
+[MFLOG|0|2024-10-19T21:43:13.776779Z|runtime|9c9585ba-169c-47d1-bc64-0531c70ee352]    concrete = self._get_concrete_function_garbage_collected(args, kwargs)
+[MFLOG|0|2024-10-19T21:43:13.776797Z|runtime|11d6e993-9da0-4936-911a-9cd809596847]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776816Z|runtime|ad0dc40e-abeb-4603-84c2-a5a78f6f6c29]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 1221, in _get_concrete_function_garbage_collected
+[MFLOG|0|2024-10-19T21:43:13.776841Z|runtime|289f3f4d-a194-4c11-ae57-3554136f89d1]    self._initialize(args, kwargs, add_initializers_to=initializers)
+[MFLOG|0|2024-10-19T21:43:13.776860Z|runtime|e5b13dbc-0838-41c9-87e4-7d0b5d191793]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 696, in _initialize
+[MFLOG|0|2024-10-19T21:43:13.776881Z|runtime|8ad4f068-0087-4776-9912-4f037ef6b745]    self._concrete_variable_creation_fn = tracing_compilation.trace_function(
+[MFLOG|0|2024-10-19T21:43:13.776901Z|runtime|284099ec-e671-4659-9764-c2004e760d2e]                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776920Z|runtime|4df285ea-a619-4e1b-a503-99471bce177e]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 178, in trace_function
+[MFLOG|0|2024-10-19T21:43:13.776939Z|runtime|38835f1c-6855-4398-93a7-03c597df9b26]    concrete_function = _maybe_define_function(
+[MFLOG|0|2024-10-19T21:43:13.776961Z|runtime|a1bc6030-5652-43af-bb31-207662f9a113]                        ^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.776979Z|runtime|50d4d53e-5335-476c-9e6b-0da7cdea28e0]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 283, in _maybe_define_function
+[MFLOG|0|2024-10-19T21:43:13.777000Z|runtime|5a8d0c1d-38c5-4743-a3bb-6d9e284be726]    concrete_function = _create_concrete_function(
+[MFLOG|0|2024-10-19T21:43:13.777018Z|runtime|8aa4d635-6804-4df9-8777-4304ab63d4ba]                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.777037Z|runtime|5c846ca4-3069-4f19-abf3-deb096042e57]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 310, in _create_concrete_function
+[MFLOG|0|2024-10-19T21:43:13.777056Z|runtime|5ece24ba-85b6-45eb-99fb-3d301b361b79]    traced_func_graph = func_graph_module.func_graph_from_py_func(
+[MFLOG|0|2024-10-19T21:43:13.777077Z|runtime|c8dfd0fd-6af6-4d6c-9073-e8b945150a80]                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.777096Z|runtime|2ed6868e-fe60-4df1-bc4f-2dc901ad6666]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/framework/func_graph.py", line 1059, in func_graph_from_py_func
+[MFLOG|0|2024-10-19T21:43:13.777120Z|runtime|a051c284-8fee-43cb-b2b9-16d4c39170d0]    func_outputs = python_func(func_args, func_kwargs)
+[MFLOG|0|2024-10-19T21:43:13.777138Z|runtime|6f20ff8e-bfd2-46b3-b0a5-3b89dce2e276]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.777156Z|runtime|cf0dff34-8eec-45cd-a388-755ef3e7cc0b]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 599, in wrapped_fn
+[MFLOG|0|2024-10-19T21:43:13.777175Z|runtime|4e061e24-f1c0-4755-b321-673ce4d988e8]    out = weak_wrapped_fn().__wrapped__(args, kwds)
+[MFLOG|0|2024-10-19T21:43:13.777193Z|runtime|d7c02ec6-1cda-48df-b616-34cdc93e3f90]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.777211Z|runtime|92df75de-2ab2-4d63-8d72-bc38e5802dc2]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/data/ops/structured_function.py", line 231, in wrapped_fn
+[MFLOG|0|2024-10-19T21:43:13.777230Z|runtime|ec90fa0a-8125-46fd-922f-f4210cf69bb0]    ret = wrapper_helper(args)
+[MFLOG|0|2024-10-19T21:43:13.777257Z|runtime|a5d10694-2338-4781-a560-22b00d26ac64]          ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.777277Z|runtime|60716a7c-a26a-4931-9338-d46b85bec14a]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/data/ops/structured_function.py", line 161, in wrapper_helper
+[MFLOG|0|2024-10-19T21:43:13.777310Z|runtime|cf525cd5-4580-4613-879d-d7314fc71853]    ret = autograph.tf_convert(self._func, ag_ctx)(nested_args)
+[MFLOG|0|2024-10-19T21:43:13.777329Z|runtime|1852e9fc-27bb-462f-95d9-6f8b42c604cc]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.777347Z|runtime|e2dd0c72-4ea0-43dc-919d-97fa089e6a19]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/autograph/impl/api.py", line 693, in wrapper
+[MFLOG|0|2024-10-19T21:43:13.777367Z|runtime|233392a4-a4fd-4f81-acb1-3cf7a0b81d2b]    raise e.ag_error_metadata.to_exception(e)
+[MFLOG|0|2024-10-19T21:43:13.777387Z|runtime|52b9b7db-19bd-4f80-aab2-5ed1c6096714]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/autograph/impl/api.py", line 690, in wrapper
+[MFLOG|0|2024-10-19T21:43:13.777405Z|runtime|9b4e6bb8-8d22-453f-b97c-4b3fdcad9615]    return converted_call(f, args, kwargs, options=options)
+[MFLOG|0|2024-10-19T21:43:13.777423Z|runtime|cf0e3083-efb7-4df3-9c61-cd1790ffab61]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.777443Z|runtime|9b76b49e-e9a8-4ed3-8945-512e4cfa6be4]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/tensorflow/python/autograph/impl/api.py", line 439, in converted_call
+[MFLOG|0|2024-10-19T21:43:13.777462Z|runtime|47a64805-2ab2-48b6-8405-fef1c412bb28]    result = converted_f(effective_args, kwargs)
+[MFLOG|0|2024-10-19T21:43:13.777480Z|runtime|ab1d1e63-c880-4ca6-88c3-b5cb6a29b158]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:43:13.777498Z|runtime|baff0aa1-53d7-4ef2-8e6a-b9b5476e345d]TypeError: in user code:
+[MFLOG|0|2024-10-19T21:43:13.777519Z|runtime|62c5744a-8860-41b4-a5f5-23394c3cb5f0]
+[MFLOG|0|2024-10-19T21:43:13.777539Z|runtime|976f9671-6680-4dda-88bb-85bbf9dbbf4e]
+[MFLOG|0|2024-10-19T21:43:13.777557Z|runtime|46752006-bae7-45b1-a265-71de2c9a3c87]    TypeError: outer_factory.<locals>.inner_factory.<locals>.tf__preprocess() takes 1 positional argument but 2 were given
+[MFLOG|0|2024-10-19T21:43:13.777576Z|runtime|a2c627c8-6efe-4508-95f7-e3e47f07e559]
+[MFLOG|0|2024-10-19T21:43:13.777594Z|runtime|c4a4550d-74be-43df-abed-42484f295cb7]
+[MFLOG|0|2024-10-19T21:43:13.778233Z|runtime|9b53d859-8267-4e10-9e26-453e37430174]Task failed.

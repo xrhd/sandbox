@@ -1,0 +1,38 @@
+[MFLOG|0|2024-10-19T21:38:28.546684Z|runtime|226560fc-a4a5-4fd0-9455-f5ff16c295ef]<flow MNISTFlow step train> failed:
+[MFLOG|0|2024-10-19T21:38:28.549925Z|runtime|f2a95ae6-28d4-4374-aeb5-3f522cd48bbd]    Internal error
+[MFLOG|0|2024-10-19T21:38:28.550877Z|runtime|db25f53d-35dd-4e4e-b674-0230f13711a4]Traceback (most recent call last):
+[MFLOG|0|2024-10-19T21:38:28.550918Z|runtime|7d5f3b4a-30a9-44c6-92e5-101b3deff7f4]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/cli.py", line 1139, in main
+[MFLOG|0|2024-10-19T21:38:28.550960Z|runtime|323831ca-339a-4008-8171-a25c1967f518]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-10-19T21:38:28.550991Z|runtime|4dddf39e-1918-45a3-aae1-732c2045f677]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-10-19T21:38:28.551021Z|runtime|4ceb47ec-8033-4d51-a6c2-54cd846f23ed]    return func(args, kwargs)
+[MFLOG|0|2024-10-19T21:38:28.706741Z|runtime|620a9f1e-47b9-4a84-b4dc-edcb6f4cc371]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:38:28.706948Z|runtime|8a502bf1-81a8-4e24-8922-fc1be7fdfc82]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-10-19T21:38:28.706979Z|runtime|cf8c60b6-fa42-49f2-a63f-7dd1e9501409]    return self.main(args, kwargs)
+[MFLOG|0|2024-10-19T21:38:28.707003Z|runtime|ef88b422-64ee-4291-9bf0-ee6a4aba1715]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:38:28.707033Z|runtime|e3aecd65-0c2f-4dc0-b3b1-4ef0c181f4dd]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-10-19T21:38:28.707056Z|runtime|ffd43e08-bb8d-4a8a-ae89-90370bf43aa2]    rv = self.invoke(ctx)
+[MFLOG|0|2024-10-19T21:38:28.707079Z|runtime|ae58a0df-1361-4168-b9e1-4d7657cfa753]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:38:28.707105Z|runtime|4c54e148-9812-4fc4-b740-7aa54686cb41]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-10-19T21:38:28.707125Z|runtime|2ea19121-a60d-4ab7-90e3-7b359e266475]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-10-19T21:38:28.707146Z|runtime|8a1e69be-9347-4dd1-92d4-b4cea06fcb67]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:38:28.707166Z|runtime|6842f298-bbc3-40cd-b0b3-9a165b6efdf6]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-10-19T21:38:28.707186Z|runtime|64200876-6c5d-4a0d-8139-4d92a4890408]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-10-19T21:38:28.707208Z|runtime|415be4d5-0db7-43e1-b0f4-5c110b4f0453]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:38:28.707228Z|runtime|90754681-e9af-468d-9019-6ba60b9acf5a]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-10-19T21:38:28.707249Z|runtime|d1c0dce6-55fe-464e-a4e2-bd01727c54af]    return callback(args, kwargs)
+[MFLOG|0|2024-10-19T21:38:28.707268Z|runtime|2ada0f1e-d816-470e-a6ef-ea6488e35cb3]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:38:28.707288Z|runtime|91fd5f30-4b8e-4db6-9508-65032a6e2f97]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-10-19T21:38:28.707307Z|runtime|704b553b-74cb-4c6e-81df-b576f7845cf9]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-10-19T21:38:28.707325Z|runtime|6b35249e-4fdc-4655-9cfc-54b584a81dec]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:38:28.707344Z|runtime|a4310b99-5398-4bda-8307-4dade1733ad1]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-10-19T21:38:28.707363Z|runtime|a29a0523-882e-4da8-b93c-357d663a227d]    task.run_step(
+[MFLOG|0|2024-10-19T21:38:28.707384Z|runtime|4a88a850-a11d-4159-a225-6cfe2f59815e]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/task.py", line 657, in run_step
+[MFLOG|0|2024-10-19T21:38:28.707403Z|runtime|99c4a0fd-a18a-412c-91bf-8335eaaf2c5a]    self._exec_step_function(step_func)
+[MFLOG|0|2024-10-19T21:38:28.707422Z|runtime|4ec3890a-ac3b-4987-9492-a4492ab2bf14]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-10-19T21:38:28.707441Z|runtime|912396b6-b661-47ca-9489-162199b1f187]    step_function()
+[MFLOG|0|2024-10-19T21:38:28.707462Z|runtime|2392d51e-a21a-4797-937d-ffab3c9fc0b0]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/hello.py", line 90, in train
+[MFLOG|0|2024-10-19T21:38:28.707481Z|runtime|8d4c4c36-3c59-4470-845f-5cfe0a806680]    params = model.init(jax.random.PRNGKey(0), jnp.ones((1, 28  28)))
+[MFLOG|0|2024-10-19T21:38:28.707502Z|runtime|a61e7b63-6185-4e62-983a-d0c46f0982c1]             ^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:38:28.707521Z|runtime|ed680727-1ea9-4f47-93f5-2caded4a3134]AttributeError: 'SimpleMLP' object has no attribute 'init'
+[MFLOG|0|2024-10-19T21:38:28.707543Z|runtime|21e054b2-1cde-4c33-8e18-345926135d07]
+[MFLOG|0|2024-10-19T21:38:28.708181Z|runtime|134651b5-d9cf-4b5a-a672-bfd0b80dc173]Task failed.

@@ -1,0 +1,1 @@
+{"run_number": "1729375107889400", "step_name": "load_data", "task_id": "2", "flow_id": "MNISTFlow", "user_name": "xrhd", "tags": [], "system_tags": ["user:xrhd", "runtime:dev", "metaflow_version:2.12.25", "python_version:3.11.10"], "ts_epoch": 1729375111293}

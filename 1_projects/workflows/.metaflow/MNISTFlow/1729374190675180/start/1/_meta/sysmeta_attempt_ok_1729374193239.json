@@ -1,0 +1,1 @@
+{"flow_id": "MNISTFlow", "run_number": "1729374190675180", "step_name": "start", "task_id": "1", "field_name": "attempt_ok", "type": "internal_attempt_status", "value": "False", "tags": ["attempt_id:0"], "user_name": "xrhd", "ts_epoch": 1729374193239}

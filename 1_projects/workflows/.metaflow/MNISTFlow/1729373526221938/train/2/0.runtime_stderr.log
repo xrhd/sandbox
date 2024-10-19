@@ -1,0 +1,46 @@
+[MFLOG|0|2024-10-19T21:32:19.963233Z|runtime|33ecb774-bd8f-440f-ad77-1ac25fa8c465]<flow MNISTFlow step train> failed:
+[MFLOG|0|2024-10-19T21:32:19.967322Z|runtime|2068f0ff-e651-47e9-afe8-1f2224fb8736]    Internal error
+[MFLOG|0|2024-10-19T21:32:19.967915Z|runtime|f47fb9dd-9161-4ca8-8260-0d70b9ff567a]Traceback (most recent call last):
+[MFLOG|0|2024-10-19T21:32:19.968005Z|runtime|6d034e59-b09e-48f4-bcb5-c210c1ccd424]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/cli.py", line 1139, in main
+[MFLOG|0|2024-10-19T21:32:19.968046Z|runtime|50db296c-83ef-4067-8881-2a1e777b0223]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-10-19T21:32:19.968077Z|runtime|65dac750-f9ae-4dc3-8fe8-c1e06ee4b06b]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-10-19T21:32:19.968110Z|runtime|03b73a41-8b4b-4b1b-b807-46b323c5a2ba]    return func(args, kwargs)
+[MFLOG|0|2024-10-19T21:32:20.090629Z|runtime|14ddf5fd-ca5b-4433-b469-4fdb555bb8d0]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.090829Z|runtime|8a25bcf6-b63a-4cea-ad25-5f32e894dec1]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-10-19T21:32:20.090862Z|runtime|bf742145-263d-47f0-b840-0797a986d383]    return self.main(args, kwargs)
+[MFLOG|0|2024-10-19T21:32:20.090894Z|runtime|66800a47-eafc-4e62-8e3d-3cf9a7a60a18]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.090915Z|runtime|baf924bf-b2e9-433e-8b34-1da8a504650a]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-10-19T21:32:20.090938Z|runtime|2a94e9c2-4208-4a11-9c9b-6a77a4d0188a]    rv = self.invoke(ctx)
+[MFLOG|0|2024-10-19T21:32:20.090958Z|runtime|6044d1b4-4632-4bd9-b32f-de5ec6bbdc2c]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.090978Z|runtime|f51d0cdc-66a3-41da-9bb0-a2296fbd4108]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-10-19T21:32:20.090998Z|runtime|da7a889d-84f3-41ea-9529-ead0721a5c58]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-10-19T21:32:20.091018Z|runtime|a1661cab-e837-46dc-aa54-b23e84b4e301]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.091036Z|runtime|6b84c794-8a3d-49b1-9e84-5e4d60185d71]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-10-19T21:32:20.091059Z|runtime|c30ad499-8099-4ddf-90eb-a17c4224cce9]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-10-19T21:32:20.091079Z|runtime|e4a069be-96fe-4b30-8480-5222119d4406]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.091098Z|runtime|cbca47fa-4188-4616-9d8a-728c31040920]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-10-19T21:32:20.091132Z|runtime|144c93fe-d02d-4225-b2c3-b9f8af3fbfaf]    return callback(args, kwargs)
+[MFLOG|0|2024-10-19T21:32:20.091152Z|runtime|140de758-7578-4ab0-b4ed-fd02f5394546]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.091171Z|runtime|110ac65f-756e-4be3-bafc-a9a469881b33]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-10-19T21:32:20.091195Z|runtime|aeded1d2-4ec9-4552-93b1-0f55aa607818]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-10-19T21:32:20.091214Z|runtime|8c42c99c-9373-4135-913f-0d3471ad554f]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.091233Z|runtime|0bf5f1ec-c407-4cb0-a0b7-032a637b4b16]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/cli.py", line 469, in step
+[MFLOG|0|2024-10-19T21:32:20.091253Z|runtime|856ba982-6475-42ec-a587-d626f8b31a3f]    task.run_step(
+[MFLOG|0|2024-10-19T21:32:20.091273Z|runtime|3f8f1e0d-4fa9-4e9b-8acd-44dba889a468]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/task.py", line 657, in run_step
+[MFLOG|0|2024-10-19T21:32:20.091298Z|runtime|8c469024-406c-48b5-9e7a-97b1ee5f1960]    self._exec_step_function(step_func)
+[MFLOG|0|2024-10-19T21:32:20.091319Z|runtime|2c2ca765-c5d0-4a33-87ca-71840be0950e]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-10-19T21:32:20.091343Z|runtime|aa9365ed-088a-4db8-8667-3e7ccce27194]    step_function()
+[MFLOG|0|2024-10-19T21:32:20.091362Z|runtime|52243cc0-9b04-4c7a-8098-78241fc79dcf]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/hello.py", line 39, in train
+[MFLOG|0|2024-10-19T21:32:20.091383Z|runtime|b6c41064-05d7-4873-a7b2-f97f029162bc]    params = model.init(jax.random.PRNGKey(0), jnp.ones((1, 28  28)))
+[MFLOG|0|2024-10-19T21:32:20.091402Z|runtime|ecd5f7e3-11de-4496-8c93-b185b236dcf9]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.091423Z|runtime|b7b94477-f1b8-4f82-ac57-cc9bd1dd98ee]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/hello.py", line 11, in __call__
+[MFLOG|0|2024-10-19T21:32:20.091441Z|runtime|963280bd-d668-49a9-b8ad-5c7c26dd1e4d]    x = nnx.Dense(features=128)(x)
+[MFLOG|0|2024-10-19T21:32:20.091462Z|runtime|10eb3eb4-0980-4c23-bc29-8fd9e0a0a5e6]        ^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-10-19T21:32:20.091480Z|runtime|0bc99dbb-2936-47b9-9dd1-d1e386b886b3]  File "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.venv/lib/python3.12/site-packages/flax/linen/kw_only_dataclasses.py", line 235, in init_wrapper
+[MFLOG|0|2024-10-19T21:32:20.091499Z|runtime|781ce354-0b5b-4f63-917f-27e2b13e642e]    dataclass_init(self, args, kwargs)
+[MFLOG|0|2024-10-19T21:32:20.091517Z|runtime|3778bda0-5698-42e3-9ef3-ea789f64376c]  File "<string>", line 14, in __init__
+[MFLOG|0|2024-10-19T21:32:20.091536Z|runtime|915df1fb-b51e-480d-be57-3bc8e5e53581]flax.errors.AssignSubModuleError: Submodule Dense must be defined in `setup()` or in a method wrapped in `@compact` (https://flax.readthedocs.io/en/latest/api_reference/flax.errors.html#flax.errors.AssignSubModuleError)
+[MFLOG|0|2024-10-19T21:32:20.091559Z|runtime|703027fd-b838-4089-93c9-30da1e67f357]--------------------
+[MFLOG|0|2024-10-19T21:32:20.091579Z|runtime|e55d73bd-a518-47a0-8f16-1479dd453160]For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+[MFLOG|0|2024-10-19T21:32:20.091601Z|runtime|e958c8e1-cde8-420a-92da-d945c3ef81ae]
+[MFLOG|0|2024-10-19T21:32:20.092188Z|runtime|20db4ed4-3a42-4ec4-b289-9c531ce24b62]Task failed.
