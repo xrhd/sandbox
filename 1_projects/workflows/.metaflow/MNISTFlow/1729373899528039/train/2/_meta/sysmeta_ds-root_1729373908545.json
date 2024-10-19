@@ -1,1 +1,0 @@
-{"flow_id": "MNISTFlow", "run_number": "1729373899528039", "step_name": "train", "task_id": "2", "field_name": "ds-root", "type": "ds-root", "value": "/Users/xrhd/repos/xrhd/sandbox/1_projects/workflows/.metaflow", "tags": ["attempt_id:0"], "user_name": "xrhd", "ts_epoch": 1729373908545}
