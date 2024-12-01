@@ -1,5 +1,5 @@
 let Home = () => {
-    return <>Hi</>
+    return <>Hello world</>
 }
 
 export default Home
