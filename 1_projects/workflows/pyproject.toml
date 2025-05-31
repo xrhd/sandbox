@@ -1,0 +1,15 @@
+[project]
+name = "workflows"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.11"
+dependencies = [
+    "flax>=0.10.0",
+    "jax>=0.4.34",
+    "matplotlib>=3.9.2",
+    "metaflow>=2.12.25",
+    "tensorflow>=2.17.0",
+    "tfds-nightly>=4.9.6.dev202410190044",
+    "treescope>=0.1.5",
+]
